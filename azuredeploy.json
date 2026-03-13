@@ -315,10 +315,10 @@
                                     }
                                 },
                                 "Set_variable_-_Increment_AuditOffset": {
-                                    "type": "SetVariable",
+                                    "type": "IncrementVariable",
                                     "inputs": {
                                         "name": "AuditOffset",
-                                        "value": "@add(variables('AuditOffset'), 100)"
+                                        "value": 100
                                     },
                                     "runAfter": {
                                         "Condition_-_Audit_Page_Has_Events": [
